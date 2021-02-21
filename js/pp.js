@@ -1,6 +1,6 @@
 // options
-var options = {
-    imgSrc : "./img/DeveloperJared.jpg",
+  var options = {
+    imgSrc : "./img/AtDeskMod.jpg",
     containerName : "tileContainer",
     grid : false,
     tileWidth : 50,
@@ -22,17 +22,14 @@ var options = {
   tileContainer = document.getElementsByClassName(options.containerName)[0];
   
   function init(){
-    var isMobile = navigator.userAgent.match(
-        /(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i)
-        console.log("Mobile: ", isMobile);
     if(options.grid == false)tileContainer.className += " noGrid";
     //preload image and get original image size, then create tiles
     var image = new Image();
     image.src = options.imgSrc;
     image.onload = function(e){
       imageLoaded = true;
-      imgOriginalWidth = e.currentTarget.width;
-      imgOriginalHeight = e.currentTarget.height;
+      imgOriginalWidth = 1971;
+      imgOriginalHeight = 1022;
       createTileHolder();
       checkTileNumber();
       positionImage();
@@ -146,7 +143,6 @@ var options = {
       }else if(directionX < 0){
         left = nowLeftPos - offset;
       }
-      
       if(directionY > 0){
         top = nowTopPos + offset;
       }else if(directionY < 0){
