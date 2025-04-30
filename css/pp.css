@@ -72,7 +72,7 @@ h3 {
 }
 
 .tileContainer {
-  border: 10px solid black;
+  border: none;
   display: inline-block;
   position: relative;
   width: 80%;
